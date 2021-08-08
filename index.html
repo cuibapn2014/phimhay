@@ -1,0 +1,454 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Blog Tuấn Nguyen</title>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>s
+<script type="text/javascript">
+$(function() {
+    $('.background img:gt(0)').hide();
+    setInterval(function(){
+      $('.background :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.background');}, 
+      5500);
+})
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8738110691939932",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
+<style type="text/css" link rel="stylesheet" href="css/font-awesome.min.css" />
+*{
+margin:0px;
+padding:0px;
+font-family:sans-serif;
+}
+body{
+display:block;
+background:rgba(204,204,204,1);
+}
+div, nav{
+display:block;
+}
+
+/*Bố Cục Đầu Trang*/
+
+.top{
+background:rgb(0,102,255);
+width:100%;
+height:50px;
+top:0px;
+position:fixed;
+z-index:100000;
+box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+}
+.bottom{
+display:block;
+width:100%;
+height:50px;
+background:rgba(0,0,0,0.8);
+color:rgba(255,255,255,1);
+bottom:0px;
+}
+.menu{
+	display:block;
+	width:560px;
+	height:100%;
+	float:right;
+	margin-right:20px;
+}
+.list-menu{
+float:left;
+width:110px;
+height:100%;
+text-align:center;
+color:#FFF;
+list-style:none;
+line-height:50px;
+font-size:18px;
+right:0px;
+padding:0px;
+-webkit-transition: background .55s ease;
+-moz-transition:background .55s ease;
+-ms-transition:background .55s ease;
+-o-transition:background .55s ease;
+}
+a{
+	text-decoration:none;
+	color:rgba(255,255,255,1);
+}
+.list-menu:hover{
+background:#03C;
+border-bottom:3px #FFF solid;
+}
+
+/*Bố cục giữa Web*/
+ 
+ .container {
+ display:block;
+ width:100%;
+ height:500px auto;
+ float:none;
+ margin:50px 0px 20px 0px;
+
+ }
+ .menu-left{
+	 float:left;
+	 width:15%;
+	 height:700px;
+ }
+.contact{
+left:0px;
+top:30%;
+position:fixed;
+}
+ .content{
+ float:left;
+ width:70%;
+ height:700px;
+ position:relative;
+ background:#FFF;
+ margin-bottom:20px;
+ overflow:hidden;
+  box-shadow:0px 0px 10px  rgba(0,0,0,10);
+  -moz-box-shadow:0px 0px 10px rgba(0,0,0,10);
+  -webkit-box-shadow:0px 0px 10px rgba(0,0,0,10);
+ }
+ul{
+	list-style:none;
+}
+ .content-content{
+ display:block;
+ float:left;
+ width:60%;
+ height:500px;
+ margin:20px 0px 0px 20px;
+ }
+ .info-add{
+ display:block;
+ float:right;
+ width:30%;
+ height:500px;
+ position:relative;
+ margin:20px 20px 0px 0px;
+ padding:0px;
+  }
+  .info-add::before{
+  display:inline-block;
+  width:80px;
+  text-align:center;
+  text-shadow:0px 0px 0px rgba(0,0,0,0.5);
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  height:20px;
+  background:rgba(0,51,255,0.8);
+  content:"ADMIN";
+  font-size:18px;
+  line-height:20px;
+  color:rgba(255,255,255,1);
+  padding:10px;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:700;
+  }
+ .content::before{
+ display:inline-block;
+ color:rgba(255,255,255,1);
+ line-height:50px;
+ padding-left:20px; 
+ font-size:24px;
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ content:"NỔI BẬT NHẤT";
+ width:100%;
+ height:50px;
+ background:rgba(0,102,255,1); 
+ }
+ .menu-right{
+ float:left;
+ width:15%;
+ height:700px;
+ }
+ .clear{
+ clear:both;
+ } 
+ .background{position:relative; width:70%; height:400px; margin-left:15%; margin-top:20px;}
+.background img {position:absolute;left:0; top:0; overflow:hidden; background-position:center; background-size:cover; width:100%; height:400px; transition:background ease-out;}
+
+/*Phần Lien He Các Mạng Xã Hội*/
+
+.fa-facebook, .fa-google-plus, .fa-twitter, .fa-skype{
+display:inline-block;
+font-size:24px;
+line-height:50px;
+}
+.fb{
+width:50px;
+height:50px;
+color:#FFF;
+background:rgb(0,0,102);
+text-align:center;
+-webkit-transition:width .55s ease 0s;
+-moz-transition: width .55s ease 0s;
+-ms-transition: width .55s ease 0s;
+-o-transition:width .55s ease 0s;
+}
+.google{
+width:50px;
+height:50px;
+color:#FFF;
+background:#c52e25;
+text-align:center;
+-webkit-transition:width .55s ease 0s;
+-moz-transition: width .55s ease 0s;
+-ms-transition: width .55s ease 0s;
+-o-transition:width .55s ease 0s;
+}
+.tw{
+width:50px;
+height:50px;
+color:#FFF;
+background:rgba(0,153,255,1);
+text-align:center;
+-webkit-transition:width .55s ease 0s;
+-moz-transition: width .55s ease 0s;
+-ms-transition: width .55s ease 0s;
+-o-transition:width .55s ease 0s;
+}
+.sky{
+width:50px;
+height:50px;
+color:#FFF;
+background:rgba(0,153,255,1);
+text-align:center;
+-webkit-transition:width .55s ease 0s;
+-moz-transition: width .55s ease 0s;
+-ms-transition: width .55s ease 0s;
+-o-transition:width .55s ease 0s;
+}
+.fb:hover, .google:hover, .tw:hover, .sky:hover{
+	width:80px;
+	background:#FFF;
+	}
+	.fb:hover{
+	color:rgb(0,0,102);
+	}
+.google:hover{
+color:#c52e25;
+}
+.tw:hover{
+color:rgba(0,153,255,1);
+}
+.sky:hover{
+color:rgba(0,153,255,1);
+}
+.list-contact{
+display:block;
+width:50px;
+height:50px;
+list-style:none;
+}
+
+/*Bãn Quyen Web*/
+
+.coppyright{
+text-align:center;
+width:100%;
+height:auto;
+
+}
+.fa-copyright{
+display:inline-block;
+color:rgba(153,153,153,1);
+padding-top:25px;
+font-size:12px;
+}
+
+/*Thông tin Admin*/
+
+.info-admin{
+display:block;
+width:100%;
+height:200px;
+position:relative;
+border-top:2px solid rgba(0,51,255,0.8);
+}
+.avatar-ad{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	margin:10px 0px 5px 29%;
+	background-image:url(avatar.jpg);
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.content-info-admin, .content-info-admin a{
+width:100%;
+height:100px auto;
+color:rgba(0,0,0,1);
+font-family:sans-serif;
+font-size:12px;
+font-weight:400;
+top:0px;
+margin-left:10px;
+margin-top:10px;
+box-sizing:border-box;
+}
+.content-info-admin a:hover{
+color:#0033FF;
+}
+/*Phan Bai Viet*/
+#danhsachbaiviet {
+	display:block;
+	width:100%;
+	height:auto 100%;
+	margin: 20px 5px 20px 5px;
+}
+.baiviet {
+display:block;
+width:100%;
+height:150px;
+padding:10px 0px 10px 0px;
+border-bottom:1px #CCCCCC solid;
+}
+.baiviet .img{
+	width:200px;
+	height:150px;
+	float:left;
+	background-size:cover;
+	background-position:center;
+	border:1px #000 solid;
+}
+.baiviet:hover{
+border-right:5px rgb(0,102,255) inset;
+transition: border 0.6s ease;
+-moz-border-right:0.6s;
+-webkit-border-right:0.6s;
+}
+.baiviet:hover .nenden{
+opacity:0;
+}
+h3{
+display:block;
+margin:0xp 0px 0px 0px;
+padding-left:5px;
+font-size:20px;
+color:black;
+position:relative;
+width:63%;
+height:auto;
+float:left;
+}
+.nenden{
+display:inline-block;
+position:absolute;
+background-color:rgba(0,0,0,1);
+width:200px;
+height:150px;
+opacity:0.5;
+transition: opacity 0.5s;
+	-moz-transition:0.5s 0.5s 0.5s ease;
+	-webkit-transition:0.5s 0.5s 0.5s ease;
+	-o-transition:0.5s 0.5s 0.5s ease;
+}
+/*Quang cao*/
+.menu-right img{
+	position:relative;
+	margin-left:20px;
+}
+	</style>
+<body>
+<div class="top">
+<ul class="menu">
+<a href="index.html"><li class="list-menu"><i class="fa fa-home" aria-hidden="true"></i> Trang Chủ</li></a>
+<a href="baiviet.html"><li class="list-menu">Bài viết mới</li></a>
+<a href="photography.html"><li class="list-menu">Photography</li></a>
+<a href="design.html"><li class="list-menu">Design</li></a>
+<a href="donggop.html"><li class="list-menu">Đóng Góp</li></a>
+</ul>
+
+</div>
+<nav class="background">
+  <img style="background-image:url(background.jpg);" />
+  <img style="background-image:url(background-2.jpg);" />
+  <img style="background-image:url(background-3.jpg);" />
+  <img style="background-image:url(background-4.jpg);" />
+  <img style="background-image:url(background-5.jpg);" />
+</nav>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8738110691939932"
+     data-ad-slot="6236637924"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="container">
+
+<div class="menu-left">
+<ul class="contact">
+<li class="list-contact">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=141884926517053';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.iesport247.hol.es%2Findex.html&amp;src=sdkpreparse"><div class="fb">
+<div class="fb" data-href="https://www.iesport247.hol.es/index.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><i class="fa fa-facebook fa-2x" aria-hidden="true">
+</i>
+</div></a></div>
+</li>
+<li class="list-contact">
+<div class="tw"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div>
+</li>
+<li class="list-contact">
+<a href="https://plus.google.com/share?app=110&url=http%3A%2F%2Fiesport247.hol.es%2Findex.html" target="_blank"><div class="google"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></div></a>
+</li>
+<li class="list-contact">
+<div class="sky"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></div>
+</li>
+</ul>
+</div>
+<div class="content">
+     <div class="content-content">
+         <ul id="danhsachbaiviet" class="list-news">
+<a href="baiviet1.html"><li class="baiviet"><div class="img" style="background-image:url(background.jpg);"><div class="nenden"></div></div><h3>Chúng tôi đến từ những con người bình dị </h3></li></a>
+        </ul>
+
+</div>
+
+<div class="info-add">
+<div class="info-admin">
+<a href="admin-page.html"><div class="avatar-ad"></div></a>
+<div class="content-info-admin">Admin: Nguyen Manh Tuan (Koo T)<br><br>
+Facebook:<a href="https://www.facebook.com/Fakerht">www.facebook.com/Fakerht</a><br><br>Zalo: 01259867615<br><br>Gmail: fakernguyen123@gmail.com<a href="$"></a>
+ </div>
+</div>
+</div>
+
+</div>
+
+<div class="menu-right">
+<a href="http://vn.hostg.co/24031" target="_blank"><img style="border:0px" src="https://cdn.rawgit.com/hostinger/banners/1979044b/br/Hostinger---Campanhas-de--Venda---VPS---Google-Ad-160x600.gif" width="160" height="600" alt="160x600"></a>
+</div>
+
+<div class="clear"></div>
+</div>
+<footer class="bottom"><div class="coppyright"><i class="fa fa-copyright"> Coppyright - Bản quyền thuộc sở hữu NMT NXB - CLTeamLT - Website</i></div></footer>
+</body>
+</html>
